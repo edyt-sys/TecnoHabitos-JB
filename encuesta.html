@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoHábitos - Encuesta</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(240, 244, 248);
+            color: rgb(51, 51, 51);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(0, 120, 215);
+            margin-bottom: 20px;
+        }
+
+        .cuadro {
+            background: white;
+            padding: 25px;
+            margin: 25px auto;
+            width: 85%;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .pregunta {
+            margin-bottom: 18px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 7px;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(0, 120, 215);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(255, 102, 0);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 120, 215);
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(255, 102, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Encuesta sobre Tecnodependencia</h1>
+
+    <form action="respuestas.html" method="GET">
+
+        <div class="cuadro pregunta">
+            <label>1. ¿Cuántas horas al día usas tu celular?</label><br><br>
+            <input type="radio" name="horas" value="1-2"> 1 a 2 horas<br>
+            <input type="radio" name="horas" value="3-4"> 3 a 4 horas<br>
+            <input type="radio" name="horas" value="5-6"> 5 a 6 horas<br>
+            <input type="radio" name="horas" value="7+"> 7 horas o más
+        </div>
+
+        <div class="cuadro pregunta">
+            <label>2. ¿Te distraes fácilmente por el celular?</label><br><br>
+            <input type="radio" name="distraccion" value="si"> Sí<br>
+            <input type="radio" name="distraccion" value="no"> No
+        </div>
+
+        <div class="cuadro pregunta">
+            <label>3. ¿Qué aplicaciones usas más?</label><br><br>
+            <input type="checkbox" name="apps" value="tiktok"> TikTok<br>
+            <input type="checkbox" name="apps" value="facebook"> Facebook<br>
+            <input type="checkbox" name="apps" value="instagram"> Instagram<br>
+            <input type="checkbox" name="apps" value="youtube"> YouTube<br>
+            <input type="checkbox" name="apps" value="juegos"> Juegos
+        </div>
+
+        <div class="cuadro pregunta">
+            <label>4. ¿Crees que dependes mucho de la tecnología?</label><br><br>
+            <input type="radio" name="dependencia" value="si"> Sí<br>
+            <input type="radio" name="dependencia" value="no"> No
+        </div>
+
+        <div class="cuadro pregunta">
+            <label>5. Comentarios o sugerencias:</label><br>
+            <textarea name="comentarios" rows="4" placeholder="Escribe aquí..."></textarea>
+        </div>
+
+        <button type="submit">Enviar encuesta</button>
+
+    </form action="respuestas.html"
+    method="GET">
+
+    <!-- MENÚ -->
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="impactos.html">Impactos</a></li>
+        <li><a href="encuesta.html">respuestas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+</body>
+</html>
